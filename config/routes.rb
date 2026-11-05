@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "/products", to: "products#index"
   post "/products", to: "products#create"
   get "/products/:id", to: "products#show"
+  # get "/blog/:title", to: "blog#show"
 end
