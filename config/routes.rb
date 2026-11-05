@@ -12,24 +12,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  # Index - Shows all the records
-  get "/products", to: "products#index"
-
-  # New - Renders a form for creating a new record
-  get "/products/new", to: "products#new"
-  # Create - Processes the new form submission, handling errors and creating the record
-  post "/products", to: "products#create"
-
-  # Show - Renders a specific record for viewing
-  get "/products/:id", to: "products#show"
-
-  # Edit - Renders a form for updating a specific record
-  get "/products/:id/edit", to: "products#edit"
-  # Update (partial) - Handles the edit form submission, handling errors and updating specific attributes of the record, and typically triggered by a PATCH request.
-  patch "/products/:id", to: "products#update"
-  # Update (full) - Handles the edit form submission, handling errors and updating the entire record, and typically triggered by a PUT request.
-  put "/products/:id", to: "products#update"
-
-  # Destroy - Handles deleting a specific record
-  delete "/products/:id", to: "products#destroy"
+  # Typing out the 8 routes from the previous commit every time is redundant, so Rails provides a shortcut for defining them. To create all of the same CRUD routes, replace the above routes with this single line:
+  resources :products
 end
