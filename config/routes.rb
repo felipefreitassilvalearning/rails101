@@ -15,5 +15,7 @@ Rails.application.routes.draw do
   root "products#index"
 
   # Typing out the 8 routes from the previous commit every time is redundant, so Rails provides a shortcut for defining them. To create all of the same CRUD routes, replace the above routes with this single line:
-  resources :products
+  resources :products do
+    resources :subscribers, only: [ :create ]
+  end
 end

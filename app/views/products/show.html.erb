@@ -5,6 +5,7 @@
     <%= t ".stock" %>
     <%= @product.inventory_count %>
   </p>
+  <%= render "inventory", product: @product %>
   <%= image_tag @product.featured_image if @product.featured_image.attached? %>
 <% end %>
 
