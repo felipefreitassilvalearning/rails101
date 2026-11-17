@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "products#index"
 
   # Typing out the 8 routes from the previous commit every time is redundant, so Rails provides a shortcut for defining them. To create all of the same CRUD routes, replace the above routes with this single line:
   resources :products
