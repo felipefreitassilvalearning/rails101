@@ -32,3 +32,4 @@ en:
   products:
     index:
       title: "Products"
+      stock: "In stock: "

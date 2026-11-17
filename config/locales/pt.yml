@@ -3,3 +3,4 @@ pt:
   products:
     index:
       title: "Produtos"
+      stock: "Em estoque: "
