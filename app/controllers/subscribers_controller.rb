@@ -15,5 +15,4 @@ class SubscribersController < ApplicationController
     def subscriber_params
       params.expect(subscriber: [ :email ])
     end
-  
 end
